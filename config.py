@@ -12,3 +12,5 @@ PROCESSED_DATA = PROJECT_ROOT / "data" / "processed" / "scam_dialogue_thread_fea
 VALIDATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "feature_validation_report.txt"
 
 SPLIT_INDICES = PROJECT_ROOT / "data" / "processed" / "split_indices.json"
+
+FEATURE_METADATA = PROJECT_ROOT / "data" / "processed" / "feature_extraction_metadata.json"
