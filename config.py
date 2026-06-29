@@ -10,3 +10,5 @@ PARSED_DATA = PROJECT_ROOT / "data" / "processed" / "scam_dialogue_parsed.csv"
 PROCESSED_DATA = PROJECT_ROOT / "data" / "processed" / "scam_dialogue_thread_features.csv"
 
 VALIDATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "feature_validation_report.txt"
+
+SPLIT_INDICES = PROJECT_ROOT / "data" / "processed" / "split_indices.json"
