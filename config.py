@@ -1,5 +1,8 @@
-RAW_DATA = "data/raw/scam-dialogue_all.csv"
+from pathlib import Path
 
-PROCESSED_DATA = "data/processed/features.csv"
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+RAW_DATA = PROJECT_ROOT / "data" / "raw" / "scam-dialogue_all.csv"
+PROCESSED_DATA = PROJECT_ROOT / "data" / "processed" / "features.csv"
 
 SEED = 42
