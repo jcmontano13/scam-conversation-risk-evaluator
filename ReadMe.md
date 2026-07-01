@@ -42,7 +42,9 @@ scam-conversation-risk-evaluator/
 ├── outputs/
 │   └── reports/
 ├── src/
+│   ├── evaluation/
 │   ├── feature_engineering/
+│   ├── models/
 │   ├── preprocessing/
 │   └── validation/
 ├── tests/
@@ -61,7 +63,7 @@ Install Dependencies
 ```text
 pip install -r requirements.txt
 ```
-## Exectution Order
+## Execution Order
 1. Run the feature extraction script:
 ```text
 python src/feature_engineering/parse_and_features.py
@@ -83,6 +85,16 @@ python src/feature_engineering/generate_feature_metadata.py
 pytest tests/test_feature_extraction.py
 ```
 
+6. Run baseline model cross-validation:
+```text
+python src/models/train_baseline_models.py
+```
+
+7. Generate cross-validation summary report:
+```text
+python src/evaluation/generate_cv_summary_report.py
+```
+
 ## Generated Outputs
 ```text
 data/processed/scam_dialogue_parsed.csv
@@ -90,6 +102,8 @@ data/processed/scam_dialogue_thread_features.csv
 data/processed/split_indices.json
 data/processed/feature_extraction_metadata.json
 outputs/reports/feature_validation_report.txt
+outputs/reports/cv_results.csv
+outputs/reports/cv_summary_report.md
 ```
 
 ## Reproducibility
@@ -101,3 +115,5 @@ The train/test split is saved in:
 ```text
 data/processed/split_indices.json
 ```
+
+Baseline cross-validation uses only the saved training indices from `split_indices.json`. The held-out test indices are not used during cross-validation and remain reserved for final evaluation.
