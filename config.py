@@ -16,5 +16,7 @@ SPLIT_INDICES = PROJECT_ROOT / "data" / "processed" / "split_indices.json"
 FEATURE_METADATA = PROJECT_ROOT / "data" / "processed" / "feature_extraction_metadata.json"
 
 CV_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "cv_results.csv"
-
 CV_SUMMARY_REPORT = PROJECT_ROOT / "outputs" / "reports" / "cv_summary_report.md"
+
+TEST_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "test_results.csv"
+TEST_EVALUATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "test_evaluation_report.md"
