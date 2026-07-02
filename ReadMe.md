@@ -101,9 +101,12 @@ data/processed/scam_dialogue_parsed.csv
 data/processed/scam_dialogue_thread_features.csv
 data/processed/split_indices.json
 data/processed/feature_extraction_metadata.json
+
 outputs/reports/feature_validation_report.txt
 outputs/reports/cv_results.csv
 outputs/reports/cv_summary_report.md
+outputs/reports/model_stability_note.md
+outputs/reports/cv_variance_report.md
 ```
 
 ## Reproducibility
