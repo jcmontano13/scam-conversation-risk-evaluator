@@ -1,0 +1,50 @@
+{
+    "generated_at": "2026-07-02T22:58:22",
+    "selection_metric": "f1",
+    "cv_strategy": "Stratified 5-fold cross-validation",
+    "held_out_test_used": false,
+    "selected_models": {
+        "Logistic Regression": {
+            "best_params": {
+                "model__C": 0.1,
+                "model__class_weight": null,
+                "model__l1_ratio": 1.0
+            },
+            "best_f1": 0.8885283875929311,
+            "metrics": {
+                "accuracy_mean": 0.89375,
+                "accuracy_std": 0.0222895978401361,
+                "precision_mean": 0.9299876407949202,
+                "precision_std": 0.010677326698831601,
+                "recall_mean": 0.8515625,
+                "recall_std": 0.043357615392223776,
+                "f1_mean": 0.8885283875929311,
+                "f1_std": 0.02555709517342653,
+                "roc_auc_mean": 0.947711181640625,
+                "roc_auc_std": 0.014694454393171144
+            }
+        },
+        "Decision Tree": {
+            "best_params": {
+                "class_weight": null,
+                "criterion": "entropy",
+                "max_depth": 5,
+                "min_samples_leaf": 1,
+                "min_samples_split": 2
+            },
+            "best_f1": 0.892128293833055,
+            "metrics": {
+                "accuracy_mean": 0.9,
+                "accuracy_std": 0.01494619255446015,
+                "precision_mean": 0.9655283023624983,
+                "precision_std": 0.006105070270916238,
+                "recall_mean": 0.8296875,
+                "recall_std": 0.03140586131600279,
+                "f1_mean": 0.892128293833055,
+                "f1_std": 0.01782859285544881,
+                "roc_auc_mean": 0.940185546875,
+                "roc_auc_std": 0.014494442520112638
+            }
+        }
+    }
+}

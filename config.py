@@ -20,3 +20,7 @@ CV_SUMMARY_REPORT = PROJECT_ROOT / "outputs" / "reports" / "cv_summary_report.md
 
 TEST_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "test_results.csv"
 TEST_EVALUATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "test_evaluation_report.md"
+
+GRID_SEARCH_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "grid_search_results.csv"
+SELECTED_HYPERPARAMS = PROJECT_ROOT / "outputs" / "reports" / "selected_hyperparams.json"
+CV_VARIANCE_REPORT = PROJECT_ROOT / "outputs" / "reports" / "cv_variance_report.md"
