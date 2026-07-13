@@ -1,0 +1,4 @@
+risk_band,probability_min,probability_max_exclusive,recommended_action,selected_model,calibration_method,threshold_basis
+Low,0.0,0.26,"Low scam-risk score; no immediate alert, but still keep record for analysis.",Logistic Regression,isotonic,medium threshold based on recall >= 0.9; high threshold based on precision >= 0.9
+Medium,0.26,0.54,Medium scam-risk score; conversation should be reviewed or monitored.,Logistic Regression,isotonic,medium threshold based on recall >= 0.9; high threshold based on precision >= 0.9
+High,0.54,1.01,High scam-risk score; prioritize this conversation for warning or further review.,Logistic Regression,isotonic,medium threshold based on recall >= 0.9; high threshold based on precision >= 0.9
