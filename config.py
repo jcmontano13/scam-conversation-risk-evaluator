@@ -24,3 +24,7 @@ TEST_EVALUATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "test_evaluation
 GRID_SEARCH_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "grid_search_results.csv"
 SELECTED_HYPERPARAMS = PROJECT_ROOT / "outputs" / "reports" / "selected_hyperparams.json"
 CV_VARIANCE_REPORT = PROJECT_ROOT / "outputs" / "reports" / "cv_variance_report.md"
+
+CALIBRATION_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "calibration_results.csv"
+CALIBRATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "calibration_report.md"
+PROPOSED_RISK_THRESHOLDS = PROJECT_ROOT / "outputs" / "reports" / "proposed_risk_thresholds.csv"
