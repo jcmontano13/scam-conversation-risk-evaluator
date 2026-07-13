@@ -28,3 +28,6 @@ CV_VARIANCE_REPORT = PROJECT_ROOT / "outputs" / "reports" / "cv_variance_report.
 CALIBRATION_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "calibration_results.csv"
 CALIBRATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "calibration_report.md"
 PROPOSED_RISK_THRESHOLDS = PROJECT_ROOT / "outputs" / "reports" / "proposed_risk_thresholds.csv"
+
+ABLATION_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "ablation_results.csv"
+ABLATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "ablation_report.md"
