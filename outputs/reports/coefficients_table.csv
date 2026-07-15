@@ -1,0 +1,5 @@
+feature,coefficient,absolute_coefficient,direction,note
+turn_count,2.147104125272284,2.147104125272284,Increases predicted scam probability,Coefficient is based on standardized feature values.
+aggregate_money_terms,1.5389655380855294,1.5389655380855294,Increases predicted scam probability,Coefficient is based on standardized feature values.
+ratio_request_messages,0.7582099643453202,0.7582099643453202,Increases predicted scam probability,Coefficient is based on standardized feature values.
+aggregate_num_urls,0.08292737966290638,0.08292737966290638,Increases predicted scam probability,Coefficient is based on standardized feature values.

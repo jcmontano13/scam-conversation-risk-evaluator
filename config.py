@@ -31,3 +31,8 @@ PROPOSED_RISK_THRESHOLDS = PROJECT_ROOT / "outputs" / "reports" / "proposed_risk
 
 ABLATION_RESULTS = PROJECT_ROOT / "outputs" / "reports" / "ablation_results.csv"
 ABLATION_REPORT = PROJECT_ROOT / "outputs" / "reports" / "ablation_report.md"
+
+COEFFICIENTS_TABLE = PROJECT_ROOT / "outputs" / "reports" / "coefficients_table.csv"
+TREE_FEATURE_IMPORTANCE = PROJECT_ROOT / "outputs" / "reports" / "tree_feature_importance.csv"
+TREE_RULES = PROJECT_ROOT / "outputs" / "reports" / "decision_tree_rules.txt"
+INTERPRETABILITY_REPORT = PROJECT_ROOT / "outputs" / "reports" / "interpretability_report.md"

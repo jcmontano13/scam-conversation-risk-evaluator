@@ -1,0 +1,49 @@
+|--- turn_count <= 14.5000
+|   |--- aggregate_money_terms <= 4.5000
+|   |   |--- ratio_request_messages <= 0.6396
+|   |   |   |--- ratio_request_messages <= 0.4365
+|   |   |   |   |--- aggregate_num_urls <= 0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- aggregate_num_urls >  0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- ratio_request_messages >  0.4365
+|   |   |   |   |--- turn_count <= 12.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- turn_count >  12.5000
+|   |   |   |   |   |--- class: 0
+|   |   |--- ratio_request_messages >  0.6396
+|   |   |   |--- turn_count <= 13.5000
+|   |   |   |   |--- ratio_request_messages <= 0.6795
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ratio_request_messages >  0.6795
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- turn_count >  13.5000
+|   |   |   |   |--- aggregate_money_terms <= 0.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- aggregate_money_terms >  0.5000
+|   |   |   |   |   |--- class: 1
+|   |--- aggregate_money_terms >  4.5000
+|   |   |--- aggregate_money_terms <= 7.5000
+|   |   |   |--- ratio_request_messages <= 0.6795
+|   |   |   |   |--- ratio_request_messages <= 0.5192
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ratio_request_messages >  0.5192
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- ratio_request_messages >  0.6795
+|   |   |   |   |--- class: 1
+|   |   |--- aggregate_money_terms >  7.5000
+|   |   |   |--- class: 1
+|--- turn_count >  14.5000
+|   |--- turn_count <= 17.5000
+|   |   |--- aggregate_money_terms <= 3.5000
+|   |   |   |--- ratio_request_messages <= 0.6771
+|   |   |   |   |--- turn_count <= 15.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- turn_count >  15.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- ratio_request_messages >  0.6771
+|   |   |   |   |--- class: 1
+|   |   |--- aggregate_money_terms >  3.5000
+|   |   |   |--- class: 1
+|   |--- turn_count >  17.5000
+|   |   |--- class: 1
