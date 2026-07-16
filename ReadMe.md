@@ -114,7 +114,7 @@ python src/preprocessing/create_split_indices.py
 ```
 Expected outputs:
 ```text
-python src/preprocessing/create_split_indices.py
+data/processed/split_indices.json
 ```
 ### 4. Feature Metadata
 Generate feature extraction metadata:
@@ -123,7 +123,7 @@ python src/feature_engineering/generate_feature_metadata.py
 ```
 Expected outputs:
 ```text
-python src/preprocessing/create_split_indices.py
+data/processed/feature_extraction_metadata.json
 ```
 ### 5. Unit Checks
 Run unit checks:
