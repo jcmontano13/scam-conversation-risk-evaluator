@@ -1,0 +1,14 @@
+Precision-Recall Curve Summary
+===============================
+
+Dataset: Held-out test set
+Test rows: 320
+Positive class rate: 0.5000
+Features used: turn_count, aggregate_num_urls, aggregate_money_terms, ratio_request_messages
+
+              model  average_precision  test_rows
+Logistic Regression           0.967001        320
+      Decision Tree           0.899447        320
+
+Interpretation:
+The Precision-Recall curve shows the trade-off between correctly detecting scam conversations and avoiding false scam predictions. A higher Average Precision score indicates stronger performance across different classification thresholds.

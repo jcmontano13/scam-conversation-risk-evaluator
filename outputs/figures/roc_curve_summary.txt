@@ -1,0 +1,13 @@
+ROC Curve Summary
+=================
+
+Dataset: Held-out test set
+Test rows: 320
+Features used: turn_count, aggregate_num_urls, aggregate_money_terms, ratio_request_messages
+
+              model  roc_auc  test_rows
+Logistic Regression 0.958965        320
+      Decision Tree 0.900234        320
+
+Interpretation:
+The ROC curve shows how well each model separates scam and non-scam conversation threads across different classification thresholds. A higher ROC-AUC value indicates stronger discrimination performance.

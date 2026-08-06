@@ -1,0 +1,34 @@
+Confusion Matrix Heatmap Summary
+================================
+
+Input file:
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\reports\test_results.csv
+
+Generated files:
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\confusion_matrix_heatmap.png
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\confusion_matrix_values.csv
+
+Confusion matrix values:
+              model  tn  fp  fn  tp
+Logistic Regression 150  10  20 140
+      Decision Tree 149  11  28 132
+
+Logistic Regression:
+- True negatives: 150
+- False positives: 10
+- False negatives: 20
+- True positives: 140
+- Total held-out test rows represented: 320
+
+Decision Tree:
+- True negatives: 149
+- False positives: 11
+- False negatives: 28
+- True positives: 132
+- Total held-out test rows represented: 320
+
+Interpretation:
+The confusion matrix heatmap shows how each model classified the held-out test conversations. True positives represent scam conversations correctly classified as scam. True negatives represent non-scam conversations correctly classified as non-scam. False positives are non-scam conversations incorrectly classified as scam. False negatives are scam conversations incorrectly classified as non-scam. For scam detection, false negatives are important because they represent scam conversations that the model failed to detect.
+
+Note:
+This script only converts existing held-out test evaluation results into a final report figure. It does not perform model training, model tuning, or new evaluation.

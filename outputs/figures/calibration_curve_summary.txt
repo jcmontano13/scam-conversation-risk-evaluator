@@ -1,0 +1,18 @@
+Calibration Reliability Curve Summary
+=====================================
+
+Dataset: Training split only
+Evaluation method: 5-fold out-of-fold calibrated probabilities
+Inner calibration CV: 3-fold
+Training rows: 1280
+Held-out test rows used: 0 of 320
+Features used: turn_count, aggregate_num_urls, aggregate_money_terms, ratio_request_messages
+
+              model calibration_method  brier_score  training_rows  held_out_test_rows_used
+Logistic Regression           isotonic     0.081461           1280                        0
+Logistic Regression            sigmoid     0.083268           1280                        0
+      Decision Tree           isotonic     0.095088           1280                        0
+      Decision Tree            sigmoid     0.095434           1280                        0
+
+Interpretation:
+The calibration reliability curve compares predicted scam probabilities with the observed scam rate in each probability bin. Points closer to the diagonal reference line indicate better calibration. The Brier score is also reported, where a lower value indicates better probability calibration.
