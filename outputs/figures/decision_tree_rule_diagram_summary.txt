@@ -1,0 +1,89 @@
+Decision Tree Visualisation and Rule Diagram Summary
+====================================================
+
+Generated files:
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\decision_tree_visualisation.png
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\decision_tree_rule_diagram_depth3.png
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\decision_tree_rule_nodes.csv
+
+Dataset and split:
+- Dataset used: processed thread-level feature dataset
+- Training rows used: 1280
+- Held-out test rows used for this figure: 0 of 320
+
+Features used:
+- turn_count
+- aggregate_num_urls
+- aggregate_money_terms
+- ratio_request_messages
+
+Decision Tree parameters:
+- criterion: entropy
+- max_depth: 5
+- min_samples_leaf: 1
+- min_samples_split: 2
+- class_weight: None
+- random_state: 42
+
+Tree structure:
+- Total nodes: 33
+- Maximum depth: 5
+- Root split: turn_count <= 14.5000
+
+Text version of tree rules:
+|--- turn_count <= 14.5000
+|   |--- aggregate_money_terms <= 4.5000
+|   |   |--- ratio_request_messages <= 0.6396
+|   |   |   |--- ratio_request_messages <= 0.4365
+|   |   |   |   |--- aggregate_num_urls <= 0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- aggregate_num_urls >  0.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- ratio_request_messages >  0.4365
+|   |   |   |   |--- turn_count <= 12.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- turn_count >  12.5000
+|   |   |   |   |   |--- class: 0
+|   |   |--- ratio_request_messages >  0.6396
+|   |   |   |--- turn_count <= 13.5000
+|   |   |   |   |--- ratio_request_messages <= 0.6795
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ratio_request_messages >  0.6795
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- turn_count >  13.5000
+|   |   |   |   |--- aggregate_money_terms <= 0.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- aggregate_money_terms >  0.5000
+|   |   |   |   |   |--- class: 1
+|   |--- aggregate_money_terms >  4.5000
+|   |   |--- aggregate_money_terms <= 7.5000
+|   |   |   |--- ratio_request_messages <= 0.6795
+|   |   |   |   |--- ratio_request_messages <= 0.5192
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- ratio_request_messages >  0.5192
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- ratio_request_messages >  0.6795
+|   |   |   |   |--- class: 1
+|   |   |--- aggregate_money_terms >  7.5000
+|   |   |   |--- class: 1
+|--- turn_count >  14.5000
+|   |--- turn_count <= 17.5000
+|   |   |--- aggregate_money_terms <= 3.5000
+|   |   |   |--- ratio_request_messages <= 0.6771
+|   |   |   |   |--- turn_count <= 15.5000
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- turn_count >  15.5000
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- ratio_request_messages >  0.6771
+|   |   |   |   |--- class: 1
+|   |   |--- aggregate_money_terms >  3.5000
+|   |   |   |--- class: 1
+|   |--- turn_count >  17.5000
+|   |   |--- class: 1
+
+
+Interpretation:
+The Decision Tree rule diagram provides a visual explanation of how the tree model classified conversation threads. Each internal node shows a feature threshold used to split the data. Each leaf node shows the final predicted class. This supports the interpretability goal of the project because the decision process can be inspected as a set of explicit rules rather than as a black-box prediction.
+
+Note:
+This script is used for final report evidence only. It recreates the existing Decision Tree model using the saved training split and selected hyperparameters where available. It does not introduce a new dataset, new features, or a new model scope.

@@ -1,0 +1,9 @@
+model,actual_label,predicted_label,cell_type,count
+Logistic Regression,Non-scam,Non-scam,True Negative,150
+Logistic Regression,Non-scam,Scam,False Positive,10
+Logistic Regression,Scam,Non-scam,False Negative,20
+Logistic Regression,Scam,Scam,True Positive,140
+Decision Tree,Non-scam,Non-scam,True Negative,149
+Decision Tree,Non-scam,Scam,False Positive,11
+Decision Tree,Scam,Non-scam,False Negative,28
+Decision Tree,Scam,Scam,True Positive,132

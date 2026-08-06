@@ -1,0 +1,23 @@
+Threshold Trade-Off Curve Summary
+=================================
+
+Dataset: Training split only
+Model: Logistic Regression
+Calibration method: Isotonic
+Evaluation method: 5-fold out-of-fold calibrated probabilities
+Inner calibration CV: 3-fold
+Training rows: 1280
+Held-out test rows used: 0 of 320
+Features used: turn_count, aggregate_num_urls, aggregate_money_terms, ratio_request_messages
+
+Best threshold by F1-score:
+Threshold: 0.54
+Precision: 0.9421
+Recall: 0.8391
+F1-score: 0.8876
+
+Interpretation:
+The threshold trade-off curve shows how precision, recall, and F1-score change as the scam probability threshold is adjusted. Lower thresholds usually increase recall because more scam conversations are detected, but this may reduce precision by increasing false positives. Higher thresholds usually improve precision but may reduce recall by missing more scam conversations.
+
+Note:
+This output is for final report evidence and threshold behaviour analysis. It does not introduce new data, new features, or new model scope.

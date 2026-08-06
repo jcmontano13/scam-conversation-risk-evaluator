@@ -1,0 +1,23 @@
+Feature Analysis Figures Summary
+================================
+
+Input files:
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\reports\ablation_results.csv
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\reports\coefficients_table.csv
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\reports\tree_feature_importance.csv
+
+Generated figures:
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\ablation_f1_drop.png
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\logistic_regression_coefficients.png
+- C:\Users\admin\Projects\scam-conversation-risk-evaluator\outputs\figures\decision_tree_feature_importance.png
+
+Main findings:
+- Ablation analysis showed that removing turn_count caused the largest F1-score drop.
+- Logistic Regression identified aggregate_num_urls as the strongest coefficient by absolute value.
+- Decision Tree identified turn_count as the most important feature.
+
+Interpretation:
+The feature analysis figures support the interpretability section of the final report. They show which structural conversation features contributed most to scam classification. The findings also support the ablation results by showing that turn_count and aggregate_money_terms were more influential than aggregate_num_urls.
+
+Note:
+This script only converts existing output files into figures for final report evidence. It does not introduce new models, features, datasets, or evaluation results.
